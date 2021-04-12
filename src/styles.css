@@ -14,3 +14,8 @@
   justify-content: center;
   display: flex;
 }
+
+.img-avatar {
+  height: 200px;
+  width: 200px;
+}
