@@ -142,6 +142,7 @@ export class UsuarioService {
   }
 
   guardarUsuario(data: Usuario) {
+    data.password = undefined;
 
     return this.http.put(`${base_url}/usuarios/${data.id}`, data, this.headers);
 
