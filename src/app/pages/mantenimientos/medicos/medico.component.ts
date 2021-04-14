@@ -46,8 +46,6 @@ export class MedicoComponent implements OnInit {
   }
 
   cargarInfoMedico(id: string) {
-    console.log(id);
-
     if (id === 'nuevo') { return; }
 
     this.medicoService.getMedicoById(id)

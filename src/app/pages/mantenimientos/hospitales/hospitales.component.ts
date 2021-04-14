@@ -45,7 +45,6 @@ export class HospitalesComponent implements OnInit, OnDestroy {
     this.cargando = true;
     this.hospitalService.cargarHospitales()
     .subscribe(hospitales=>{
-      console.log(hospitales);
       this.cargando = false;
       this.hospitales = hospitales;
     });
@@ -96,8 +95,6 @@ export class HospitalesComponent implements OnInit, OnDestroy {
     }
     this.busquedasService.buscar('hospitales', termino)
     .subscribe((resp: Hospital[]) => {
-      console.log(resp);
-
       this.hospitales = resp;
     });
   }
